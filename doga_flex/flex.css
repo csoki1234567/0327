@@ -35,3 +35,52 @@ header table td, header table th {
     border: 1px solid black;
     padding: 5px;
 }
+.wrapper{
+    display: flex;
+    background-color: hsl(173, 34%, 58%);
+    flex-direction: column;
+}
+.card{
+    border-radius: 10px;
+    padding: 5px;
+    margin: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card:nth-child(1){
+    background-color: hsl(46, 100%, 50%);
+}
+.card:nth-child(2){
+    background-color: hsl(49, 100%, 50%);
+}
+.card:nth-child(3){
+    background-color: hsl(52, 100%, 50%);
+}
+.card:nth-child(4){
+    background-color: hsl(55, 100%, 50%);
+}
+h1{
+    text-align: center;
+}
+hr{
+    height:2px;
+    border-width:0;
+    color:black;
+    background-color: black;
+    margin: 5px;
+}
+@media only screen and (min-width: 1000px){
+    .wrapper{
+        flex-direction: row;
+        height: 30vw;
+    }
+    .card{
+        height: 20vw;
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: 50px;
+    }
+    .card p{
+        font-size: large;
+        padding: 5px;
+    }
+}
